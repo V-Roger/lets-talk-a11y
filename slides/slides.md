@@ -27,12 +27,6 @@ _dev JS full-stack @Indy depuis 2019_ <!-- .element: class="fragment" -->
 
 # A <!-- .element: class="slide_header-number" -->
 
-Notes:
-
-- Qui ici me voit & m'entend bien ?
-  - éteindre lumière + micro
-- Qui maintenant me voit & m'entend bien ?
-
 ^^^
 
 # Le petit ~Roger~ Robert
@@ -131,12 +125,6 @@ Notes:
   </pre>
 </div>
 
-Notes:
-
--> on va faire un pendu
--> A(11 lettres)Y
--> A11y === ally === allié
-
 ^^^
 
 # ACCESSIBILITY
@@ -146,12 +134,6 @@ Notes:
 # “Je ne suis pas validiste*...
 
 _*j'ai un ami qui utilise IE”_ <!-- .element: class="fragment" -->
-
-Notes:
-
-- 28% des français déclarés [source](https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-documents-de-reference/panoramas-de-la-drees/241128_Panorama_Handicap2024)
-- 8.1% reconnus professionnellement [source](https://handicap.force-ouvriere.org/tour-dhorizon-du-handicap/quelques-chiffres)
-- 80% invisible [source](https://handicap.force-ouvriere.org/tour-dhorizon-du-handicap/quelques-chiffres)
 
 ^^^
 
@@ -184,11 +166,6 @@ Notes:
 
 [source gouv.fr](https://handicap.agriculture.gouv.fr/chiffres-cles-sur-le-handicap-a284.html)
 <!-- .element: class="fragment" -->
-
-Notes:
-
-- le handicap n'est que très rarement inné
-  - "Seuls 15 % des handicaps le sont à la naissance : 85 % sont acquis au cours de la vie." [source](https://handicap.force-ouvriere.org/tour-dhorizon-du-handicap/quelques-chiffres)
 
 ---
 
@@ -235,10 +212,6 @@ Notes:
   </div>
 </div>
 
-Notes:
-
-/!\ handicapé !== fauteuil roulant électrique
-
 ^^^
 
 ![Oprah distribuant des cadeaux](../assets/oprah.webp)
@@ -250,13 +223,6 @@ _and you get a disability,_<!-- .element: class="fragment" data-fragment-index="
 _and YOU get a disability,_<!-- .element: class="fragment" data-fragment-index="3" -->
 
 _everyone gets a disability!!_<!-- .element: class="fragment" data-fragment-index="4" -->
-
-Notes:
-
-- lunettes
-- gants
-- 2G
-- RTL
 
 ^^^
 
@@ -282,19 +248,6 @@ Notes:
 
 _*Bon Sens Paysan_ <!-- .element: class="fragment" -->
 
-Notes:
-
-- Référentiel Général d'Amélioration de l'Accessibilité
-- Web Content Accessibility Guidelines
-
-- convention
-- pour les robots mais pas que
-- importance fondamentale de la sémantique
-  - origine du web
-- pas des règles, ni une fin en soi
-
--> par définition infini
-
 ^^^
 
 # Accessible ?
@@ -303,18 +256,6 @@ Notes:
 - utilisable <!-- .element: class="fragment" -->
 - compréhensible <!-- .element: class="fragment" -->
 - robuste <!-- .element: class="fragment" -->
-
-Notes:
-
--> mieux à tous les niveaux, même pour une personne valide
-=> métrique de qualité produit, pas surcouche optionnelle
-
-exemples :
-
-- créer un contenu qui puisse être présenté de différentes manières sans perte d’information ni de structure
-- laisser à l’utilisateur suffisamment de temps pour lire et utiliser le contenu
-- faire en sorte que les pages fonctionnent de manière prévisible
-- optimiser la compatibilité avec les utilisations actuelles **et futures**
 
 ^^^
 
@@ -362,24 +303,12 @@ porteuse d’information a-t-elle une alternative textuelle ?
 _[perso je les ai pas](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000809647)_ 😅
 <!-- .element: class="fragment" -->
 
-Notes:
-
-/!\ Amende absolument anecdotique pour n'importe quelle grande structure 
-
--> législation "peu" dissuasive et c'est rien de le dire...
-
 ^^^
 
 # Obligation de moyens
 
 [nos meilleurs efforts](https://fr.wikipedia.org/wiki/Obligation_de_moyens)
 <!-- .element: class="fragment" -->
-
-Notes:
-
-Aucune condition de résultat pour l'instant
-
--> législation insuffisante.
 
 ---
 
@@ -443,28 +372,11 @@ _Un·e bon dev est un·e dev fénéant·e_ <!-- .element: class="fragment" -->
 
 (Confucius; NDLR) <!-- .element: class="fragment" -->
 
-Notes:
-
-- CI/CD
-  -> importance de l'automatisation et de la non-régression
-  -> réponse valide à l'obligation de moyens
-- Mise en évidence des trous dans la raquette :
-  - checks manuels parfois nécessaires
-    - gros potentiel sur les LLMs pour ces tests précis
-  - difficulté de tester le nouveau code in-situ sans parcourir 100% de l’app à chaque fois (couteux)
-    - priorité de certaines routes par rapport à d’autres
-
 ---
 
 # B-A-BA du test E2E
 
 _Ça en fait des majuscules..._ <!-- .element: class="fragment" -->
-
-Notes:
-
-- Cypress
-- Playwright
-- Storybook
 
 ^^^
 
@@ -718,10 +630,6 @@ _(pour faire plaisir aux algos)_ 🙃
 
 _y'en a un peu plus, je vous le mets quand même ?_ <!-- .element: class="fragment" -->
 
-Notes:
-
-Cas d'usage idéal pour un LLM, implémentation simple, répétitive & laborieuse
-
 ^^^
 
 # LLM sous LSD
@@ -766,16 +674,6 @@ _de l'importance d'une bonne relecture (ou 13)_ <!-- .element: class="fragment" 
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 </div>
-
-Notes:
-
-- Utilisation possible des agents pour valider le résultat des agents
-- Importance du prompt
-  - fournir la source à chaque fois
-  - instructions strictes
-- Gare à la reproduction du schéma validé au prompt précédent
-  - Effet boule de neige
-  - Biais de confirmation amplifié par le volume de code créé
 
 ^^^
 
@@ -833,8 +731,3 @@ _super résultat, non ?!_ <!-- .element: class="fragment" -->
 # Douter de nos tests
 
 _[toujours.]()_ <!-- .element: class="fragment" data-modal-type="image" data-modal-url="../assets/vr-photo.jpg" -->
-
-Notes:
-
-Les tests sont bons, mais une galerie photo ne servira à rien à un aveugle.
--> texte alternatif ?
