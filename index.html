@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>“a11y”... aïe aïe aïe ?!</title>
+
+		<link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="node_modules/reveal.js/dist/theme/simple.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="theme/synth-midnight-terminal-dark.css">
+		<link rel="stylesheet"  href="https://georges-public-assets.s3-eu-west-1.amazonaws.com/fonts/MartinaPlantijn/fonts.css">
+    <link rel="stylesheet"  href="https://georges-public-assets.s3-eu-west-1.amazonaws.com/fonts/SuisseIntl/fonts.css">
+	
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+		<link rel="manifest" href="assets/site.webmanifest">
+		<base target="_blank">
+	</head>
+	<body>
+		<div class="background">
+			<svg style="position: absolute; left: -30px; bottom: -10px;" aria-hidden="true" height="80" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="80" transform="rotate(-90)"><g><path d="M0 0C0 16.5685 13.4315 30 30 30C46.5685 30 60 16.5685 60 0H0Z" stroke-width="1"></path></g></svg>
+			<svg style="position: absolute; top: -30px; left: 250px;" aria-hidden="true" height="80" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="80" transform="rotate(30)"><g><path d="M19.8329 7.16805C23.4478 -2.38935 36.5522 -2.38935 40.1671 7.16805C41.7183 11.2693 45.4427 14.0619 49.7016 14.3172C59.6261 14.9119 63.6756 27.7742 55.9852 34.2757C52.6851 37.0656 51.2625 41.5842 52.3434 45.8432C54.8622 55.7682 44.2605 63.7175 35.8926 58.1783C32.3018 55.8013 27.6982 55.8013 24.1074 58.1783C15.7395 63.7175 5.13784 55.7682 7.65663 45.8432C8.7375 41.5842 7.31491 37.0656 4.0148 34.2757C-3.67561 27.7742 0.373885 14.9119 10.2984 14.3172C14.5573 14.0619 18.2816 11.2693 19.8329 7.16805Z" stroke-width="1"></path></g></svg>
+			<svg style="position: absolute; top: 84px; left: 120px;" aria-hidden="true" height="60" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="60" transform="rotate(-30)"><g><path d="M0 0C0 16.5685 13.4315 30 30 30C46.5685 30 60 16.5685 60 0H0Z" stroke-width="1"></path></g></svg>
+			<svg style="position: absolute; top: 78px; left: 104px;" aria-hidden="true" height="24" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="24" transform="rotate(-30)"><g><path d="M50 0H10C4.47715 0 0 4.47715 0 10V50C0 55.5228 4.47715 60 10 60H50C55.5228 60 60 55.5228 60 50V10C60 4.47715 55.5228 0 50 0Z" stroke-width="1"></path></g></svg>
+			<svg style="position: absolute; top: 70px; left: 136px;" aria-hidden="true" height="18" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="18" transform="rotate(-30)"><g><path d="M50 0H10C4.47715 0 0 4.47715 0 10V50C0 55.5228 4.47715 60 10 60H50C55.5228 60 60 55.5228 60 50V10C60 4.47715 55.5228 0 50 0Z" stroke-width="1"></path></g></svg>
+			<svg style="position: absolute; top: 84px; right: 350px;" aria-hidden="true" height="24" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="24" transform="rotate(-27)"><g><path d="M29.1994 0.711185C29.312 -0.237062 30.688 -0.237062 30.8006 0.711185L31.7445 8.66611C32.9633 18.9381 41.0619 27.0367 51.3338 28.2555L59.2887 29.1994C60.2371 29.312 60.2371 30.688 59.2887 30.8006L51.3338 31.7445C41.0619 32.9633 32.9633 41.0619 31.7445 51.3338L30.8006 59.2887C30.688 60.2371 29.312 60.2371 29.1994 59.2887L28.2555 51.3338C27.0367 41.0619 18.9381 32.9633 8.66611 31.7445L0.711185 30.8006C-0.237062 30.688 -0.237062 29.312 0.711185 29.1994L8.66611 28.2555C18.9381 27.0367 27.0367 18.9381 28.2555 8.66611L29.1994 0.711185Z" stroke-width="1"></path></g></svg>
+			<svg style="position: absolute; top: 60px; right: 160px;" aria-hidden="true" height="24" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="24"><g><path d="M29.1994 0.711185C29.312 -0.237062 30.688 -0.237062 30.8006 0.711185L31.7445 8.66611C32.9633 18.9381 41.0619 27.0367 51.3338 28.2555L59.2887 29.1994C60.2371 29.312 60.2371 30.688 59.2887 30.8006L51.3338 31.7445C41.0619 32.9633 32.9633 41.0619 31.7445 51.3338L30.8006 59.2887C30.688 60.2371 29.312 60.2371 29.1994 59.2887L28.2555 51.3338C27.0367 41.0619 18.9381 32.9633 8.66611 31.7445L0.711185 30.8006C-0.237062 30.688 -0.237062 29.312 0.711185 29.1994L8.66611 28.2555C18.9381 27.0367 27.0367 18.9381 28.2555 8.66611L29.1994 0.711185Z" stroke-width="1"></path></g></svg>
+			<svg style="position: absolute; right: 140px; bottom: 32px;" aria-hidden="true" height="24" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="24" transform="rotate(-27)"><g><path d="M29.1994 0.711185C29.312 -0.237062 30.688 -0.237062 30.8006 0.711185L31.7445 8.66611C32.9633 18.9381 41.0619 27.0367 51.3338 28.2555L59.2887 29.1994C60.2371 29.312 60.2371 30.688 59.2887 30.8006L51.3338 31.7445C41.0619 32.9633 32.9633 41.0619 31.7445 51.3338L30.8006 59.2887C30.688 60.2371 29.312 60.2371 29.1994 59.2887L28.2555 51.3338C27.0367 41.0619 18.9381 32.9633 8.66611 31.7445L0.711185 30.8006C-0.237062 30.688 -0.237062 29.312 0.711185 29.1994L8.66611 28.2555C18.9381 27.0367 27.0367 18.9381 28.2555 8.66611L29.1994 0.711185Z" stroke-width="1"></path></g></svg>
+			<svg style="position: absolute; left: 350px; bottom: 15px;" aria-hidden="true" height="24" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="24" transform="rotate(-27)"><g><path d="M29.1994 0.711185C29.312 -0.237062 30.688 -0.237062 30.8006 0.711185L31.7445 8.66611C32.9633 18.9381 41.0619 27.0367 51.3338 28.2555L59.2887 29.1994C60.2371 29.312 60.2371 30.688 59.2887 30.8006L51.3338 31.7445C41.0619 32.9633 32.9633 41.0619 31.7445 51.3338L30.8006 59.2887C30.688 60.2371 29.312 60.2371 29.1994 59.2887L28.2555 51.3338C27.0367 41.0619 18.9381 32.9633 8.66611 31.7445L0.711185 30.8006C-0.237062 30.688 -0.237062 29.312 0.711185 29.1994L8.66611 28.2555C18.9381 27.0367 27.0367 18.9381 28.2555 8.66611L29.1994 0.711185Z" stroke-width="1"></path></g></svg>
+			<svg style="position: absolute; right: 198px; bottom: -30px;" aria-hidden="true" height="80" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="80" transform="rotate(30)"><g><path d="M19.8329 7.16805C23.4478 -2.38935 36.5522 -2.38935 40.1671 7.16805C41.7183 11.2693 45.4427 14.0619 49.7016 14.3172C59.6261 14.9119 63.6756 27.7742 55.9852 34.2757C52.6851 37.0656 51.2625 41.5842 52.3434 45.8432C54.8622 55.7682 44.2605 63.7175 35.8926 58.1783C32.3018 55.8013 27.6982 55.8013 24.1074 58.1783C15.7395 63.7175 5.13784 55.7682 7.65663 45.8432C8.7375 41.5842 7.31491 37.0656 4.0148 34.2757C-3.67561 27.7742 0.373885 14.9119 10.2984 14.3172C14.5573 14.0619 18.2816 11.2693 19.8329 7.16805Z" stroke-width="1"></path></g></svg>
+			<svg style="position: absolute; top: 75px; right: 40px;" aria-hidden="true" height="80" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="80" transform="rotate(30)"><g><path d="M50 0H10C4.47715 0 0 4.47715 0 10V50C0 55.5228 4.47715 60 10 60H50C55.5228 60 60 55.5228 60 50V10C60 4.47715 55.5228 0 50 0Z" stroke-width="1"></path></g></svg>
+		</div>
+		<div class="reveal">
+			<div class="slides">
+				<section
+					data-markdown="slides/slides.md"
+					data-separator-vertical="^\r?\n\^\^\^\r?\n$"
+					data-separator-notes="^Notes:"
+					data-auto-animate
+				>
+				</section>
+			</div>
+		</div>
+
+		<script src="node_modules/reveal.js/dist/reveal.js"></script>
+		<script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+		<script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="node_modules/reveal.js-multimodal/plugin/multimodal/multimodal.js"></script>		
+		<link rel="stylesheet" href="theme/indy-theme.css">
+		<script>
+			Reveal.initialize({
+				// view: 'scroll',
+				hash: true,
+				scrollProgress: true,
+				transitionSpeed: 'fast',
+				transition: 'slide',
+				backgroundTransition: 'fade',
+				scrollSnap: 'proximity',
+				multimodal: {
+					bordercolor: "#FA5D89",
+					borderwidth: "2px",
+					overlaycolor: "rgba(0, 0, 0, 0.30)",
+					radius: "0.4em",
+					scalecorrection: true,
+					shadow: "0 0.5em 0.75em 0.5em rgba(0, 0, 0, 0.25)",
+
+				},
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, Multimodal ],
+			});
+
+			Reveal.configure({
+				keyboard: {
+					78: 'next',
+					80: 'prev',
+				}
+			});
+		</script>
+	</body>
+</html>

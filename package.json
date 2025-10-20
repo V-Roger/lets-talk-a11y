@@ -1,0 +1,25 @@
+{
+  "name": "a11y",
+  "version": "1.0.0",
+  "description": "Slide deck for a LyonJS meetup talk focusing on web & mobile accessibility matters",
+  "main": "index.html",
+  "scripts": {
+    "reveal": "pnpm run --filter reveal.js start --root ../ --port 1337"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "web",
+    "mobile",
+    "LyonJS",
+    "talk",
+    "meetup"
+  ],
+  "author": "Virgil Roger",
+  "license": "CC BY-NC-SA 4.0",
+  "packageManager": "pnpm@10.12.4",
+  "dependencies": {
+    "reveal.js": "^5.2.1",
+    "reveal.js-multimodal": "^1.0.1"
+  }
+}
